@@ -19,7 +19,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
 import { BiConversation } from "react-icons/bi";
-import { FiBell } from "react-icons/fi";
+// import { FiBell } from "react-icons/fi";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -37,15 +37,15 @@ const Search = styled('div')(({ theme }) => ({
   },
 }));
 
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
+// const SearchIconWrapper = styled('div')(({ theme }) => ({
+//   padding: theme.spacing(0, 2),
+//   height: '100%',
+//   position: 'absolute',
+//   pointerEvents: 'none',
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+// }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
@@ -194,7 +194,7 @@ export default function PrimarySearchAppBar() {
            <h3 className='font-Kalam text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-yellow-500'> Fashion</h3> 
            
           </Typography>
-          <Search className='dark:bg-white '>
+          {/* <Search className='dark:bg-white '>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -202,13 +202,13 @@ export default function PrimarySearchAppBar() {
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
 
-          <BsFillMoonStarsFill
+          {/* <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer"
                   color={darkMode ? "white" : ""}
-                />
+                /> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -222,7 +222,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <Badge badgeContent={11} color="error">
-              <FiBell  className="text-2xl dark:text-white"/>
+             {/* <FiBell  className="text-2xl dark:text-white"/> */}
               </Badge>
             </IconButton>
             <Button type="button" className=" dark:text-white"onClick={logInn}>
