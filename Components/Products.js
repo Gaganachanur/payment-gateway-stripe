@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Image from "next/image";
-import { Icon, Popup } from "semantic-ui-react";
+import { Button, Icon, Popup } from "semantic-ui-react";
 import { FaRegComment } from "react-icons/Fa";
 import { FiSend } from "react-icons/Fi";
 import { CgBookmark } from "react-icons/Cg";
@@ -23,10 +23,7 @@ import RedTop from "../assets/RedTop.jpg";
 import blackShirt from "../assets/blackShirt.jpg";
 import GaganBlueShirt from "../assets/GaganBlueShirt.jpg";
 import fasionquote from "../assets/fasionquote.jpg";
-import Animation from "./animation";
-import Steps from "./Steps.js";
-import Checkout from "../pages/checkout";
-
+import { checkout } from "../pages/checkout";
 import { Fragment } from "react";
 
 const ExpandMore = styled((props) => {
@@ -67,7 +64,7 @@ export default function Products() {
   return (
     <Fragment>
       <div className="flex flex-wrap justify-around">
-        <div className="mt-20" >
+        <div className="mt-20">
           <Image
             src={fasionquote}
             alt="Picture of the author"
@@ -75,7 +72,7 @@ export default function Products() {
             height={200}
           />
         </div>
-        <div >
+        <div>
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
@@ -109,23 +106,22 @@ export default function Products() {
             </CardContent>
 
             <CardActions disableSpacing>
-              <div onClick={() => setRedCount(redcount + 1)}>
+              <div  className=" px-2" onClick={() => setRedCount(redcount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
-              
-                <ExpandMore
-                  expand={expanded1}
-                  onClick={handleExpandClick1}
-                  aria-expanded={expanded1}
-                  aria-label="show more"
-                >
-                  <FaRegComment size="20px" />
-                </ExpandMore>
-          
-              <FiSend size="25px" />
+                <div
+                 expand={expanded1}
+                 onClick={handleExpandClick1}
+                 aria-expanded={expanded1}
+                 aria-label="show more"
+                >  <FaRegComment size="20px" /></div>
+              <div className="px-2">
+                {" "}
+                <FiSend size="25px" />
+              </div>
               <ExpandMore
                 expand={expanded1}
                 onClick={handleExpandClick1}
@@ -143,7 +139,7 @@ export default function Products() {
         </div>
         {/* <div ><Steps/></div> */}
       </div>
-      <h1 className="text-3xl font-semibold ... p-5 font-Michroma">
+      <h1 className="text-3xl font-semibold ... p-5 font-Kalam">
         {" "}
         Our Premium products
       </h1>
@@ -181,28 +177,42 @@ export default function Products() {
                 <BiRupee />
                 <p>699</p>
               </div>
-             
-              <Checkout/>
-            
+
+              <button
+                className="button w-full"
+                onClick={() => {
+                  checkout({
+                    lineItems: [
+                      {
+                        price: "price_1MJH66SIUtlkQfBLFfr3c6dN",
+                        quantity: 1,
+                      },
+                    ],
+                  });
+                }}
+              >
+                {" "}
+                buy now
+              </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div onClick={() => setBlackCount(blackcount + 1)}>
+              <div  className=" px-2" onClick={() => setBlackCount(blackcount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
+
              
-                <ExpandMore
-                  expand={expanded2}
-                  onClick={handleExpandClick2}
-                  aria-expanded={expanded2}
-                  aria-label="show more"
-                >
-                  <FaRegComment size="20px" />
-                </ExpandMore>
-            
-              <FiSend size="25px" />
+                <div  expand={expanded2}
+                onClick={handleExpandClick2}
+                aria-expanded={expanded2}
+                aria-label="show more"> <FaRegComment size="20px" /></div>
+             
+              <div className="px-2">
+                {" "}
+                <FiSend size="25px" />
+              </div>
               <ExpandMore
                 expand={expanded2}
                 onClick={handleExpandClick2}
@@ -253,30 +263,44 @@ export default function Products() {
                 <BiRupee />
                 <p>899</p>
               </div>
-             
-               
-                 <Checkout/>
-               
-             
+              <button
+                className="button w-full"
+                onClick={() => {
+                  checkout({
+                    lineItems: [
+                      {
+                        price: "price_1MJH1XSIUtlkQfBLB1qf0xrD",
+                        quantity: 1,
+                      },
+                    ],
+                  });
+                }}
+              >
+                {" "}
+                buy now
+              </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div onClick={() => setBlueCount(bluecount + 1)}>
+              <div  className=" px-2" onClick={() => setBlueCount(bluecount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
-             
-                <ExpandMore
-                  expand={expanded3}
-                  onClick={handleExpandClick3}
-                  aria-expanded={expanded3}
-                  aria-label="show more"
-                >
-                  <FaRegComment size="20px" />
-                </ExpandMore>
+
+            
+                <div  expand={expanded3}
+                onClick={handleExpandClick3}
+                aria-expanded={expanded3}
+                aria-label="show more"
+                >  <FaRegComment size="20px" /></div>
               
-              <FiSend size="25px" />
+              
+
+              <div className="px-2">
+                {" "}
+                <FiSend size="25px" />
+              </div>
               <ExpandMore
                 expand={expanded3}
                 onClick={handleExpandClick3}
@@ -327,29 +351,48 @@ export default function Products() {
                 <BiRupee />
                 <p>799</p>
               </div>
-              
-                <Checkout/>
-              
+              <button
+                className="button w-full "
+                onClick={() => {
+                  checkout({
+                    lineItems: [
+                      {
+                        price: "price_1MJH7YSIUtlkQfBLFF7qEscE",
+                        quantity: 1,
+                      },
+                    ],
+                  });
+                }}
+              >
+                {" "}
+                buy now
+              </button>
             </CardContent>
 
             <CardActions disableSpacing>
-              <div onClick={() => setWhiteCount(whitecount + 1)}>
+              <div
+                className=" px-2"
+                onClick={() => setWhiteCount(whitecount + 1)}
+              >
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
-             
-                <ExpandMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded1}
-                  aria-label="show more"
-                >
-                  <FaRegComment size="20px" />
-                </ExpandMore>
-             
-              <FiSend size="25px" />
+
+              <FaRegComment
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded1}
+                aria-label="show more"
+                size="20px"
+              />
+
+              <div className="px-2">
+                {" "}
+                <FiSend size="25px" />
+              </div>
+
               <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}

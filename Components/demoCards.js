@@ -2,7 +2,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import Image from "next/image";
 import { Fragment } from "react";
 import { Reveal } from "semantic-ui-react";
@@ -43,7 +43,7 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
                   Mens Top
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -76,7 +76,7 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
                   Women Pants
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -109,7 +109,7 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
                   Women Tops
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -142,7 +142,7 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography  className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
                   Mens Pants
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">

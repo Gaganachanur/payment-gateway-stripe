@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import IconButton from '@mui/material/IconButton';
 import Fingerprint from '@mui/icons-material/Fingerprint';
-//import "semantic-ui-css/semantic.min.css";
+import "semantic-ui-css/semantic.min.css";
 import {Divider} from 'semantic-ui-react'
 
 export default function LoginnPage() {

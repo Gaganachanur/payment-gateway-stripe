@@ -29,7 +29,7 @@ export default function LoginnPage() {
         <div  className='flex justify-center'>
         <Button type="button"
          className="text-black bg-white font-medium rounded-lg text-sm py-2.5 text-center mr-2 mb-2 px-16" 
-        variant="outlined"   onClick={() => signIn('google',{ callbackUrl: 'http://localhost:3000/checkout' })}>
+        variant="outlined"   onClick={() => signIn('google',{ callbackUrl: 'http://localhost:3000' })}>
            <Image src={google} alt="Google icon"width={30}height={30}/>Google</Button> 
        </div>
       </div> 
