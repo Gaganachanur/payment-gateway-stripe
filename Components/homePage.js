@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { Fragment } from "react";
 
 import PrimarySearchAppBar from "./navBar";
-import CustomNavBar from "./customNavBar";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import DemoCards from "./demoCards"
-import Animation from "./animation";
 import Products from "../Components/Products";
 import SlideEffect from "../Components/SlideEffect"
 import Footer from "./Footer";
@@ -33,15 +30,7 @@ export default function HomePage(props) {
       <div className={darkMode ? "dark" : ""}>
         <div className="bg-white dark:bg-black">
           <PrimarySearchAppBar />
-          {/* <CustomNavBar/> */}
         </div>
-        {/* <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer"
-                  color={darkMode ? "white" : ""}
-                /> */}
-        {/* <Animation/> */}
-
         <SlideEffect/>
         <DemoCards />
        

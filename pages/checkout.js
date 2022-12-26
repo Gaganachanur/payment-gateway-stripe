@@ -1,31 +1,22 @@
-import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-);
-export default function Checkout(props) {
-  const { price = ''} = props;
-  React.useEffect(() => {
-    // Check to see if this is a redirect back from Checkout
-    const query = new URLSearchParams(window.location.search);
-    if (query.get('success')) {
-      console.log('Order placed! You will receive an email confirmation.');
-    }
+export   async function checkout({lineItems}){
+ 
+let stripePromise = null
+const getStripe = ()=>{
+ 
+  if(!stripePromise){
+    stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+  }
 
-    if (query.get('canceled')) {
-      console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
-    }
-  }, []);
+  return stripePromise
+}
+const stripe = await getStripe()
 
-  return (
-    <form action="/api/checkout_sessions" method="POST">
-     
-        <button  type="submit" role="link" className='button px-32'>
-          Buy Now
-        </button>
-    </form>
-  );
+await stripe.redirectToCheckout({
+  mode: 'payment',
+  lineItems,
+  successUrl: `${window.location.origin}/?success=true`,
+  cancelUrl: `${window.location.origin}`,
+})
 }

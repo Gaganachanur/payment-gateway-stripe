@@ -19,7 +19,8 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
 import { BiConversation } from "react-icons/bi";
-// import { FiBell } from "react-icons/fi";
+import { GrCart } from "react-icons/Gr";
+import { MdLogin } from "react-icons/Md";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -151,9 +152,19 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <Button type="button" className=" dark:text-white"onClick={logInn}>
+      <MenuItem>
+        <IconButton
+          size="large"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <MdLogin/>
+          <Button  type="button" onClick={logInn}>
                   LogInn
             </Button>
+         
+        </IconButton>
+      </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -222,12 +233,18 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <Badge badgeContent={11} color="error">
-             {/* <FiBell  className="text-2xl dark:text-white"/> */}
+           <GrCart  className="text-2xl dark:text-white"/>
               </Badge>
             </IconButton>
-            <Button type="button" className=" dark:text-white"onClick={logInn}>
-                  LogInn
-            </Button>
+           
+        
+            <Button type="button"  onClick={logInn}>
+           
+           LogInn
+         </Button>
+          
+           
+           
             <IconButton
               size="large"
               edge="end"
