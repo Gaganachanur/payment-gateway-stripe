@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { BsLinkedin, BsGithub, BsMedium, BsFacebook } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsMedium } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -31,7 +31,6 @@ const Footer = () => {
     <BsLinkedin size='30px'/>
     <BsGithub size='30px'/>
     <BsMedium size='30px'/>
-    
     </div>
   </div>
   <div className=" bg-gray-500 flex flex-wrap text-white p-9 ">

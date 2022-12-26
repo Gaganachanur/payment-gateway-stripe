@@ -12,9 +12,9 @@ import { red } from "@mui/material/colors";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Image from "next/image";
 import { Button, Icon, Popup } from "semantic-ui-react";
-import { FaRegComment } from "react-icons/Fa";
-import { FiSend } from "react-icons/Fi";
-import { CgBookmark } from "react-icons/Cg";
+import { FaRegComment } from "react-icons/fa";
+import { FiSend } from "react-icons/fi";
+import { CgBookmark } from "react-icons/cg";
 import { BiRupee } from "react-icons/bi";
 
 import InstaFeeds from "./InstaFeeds";

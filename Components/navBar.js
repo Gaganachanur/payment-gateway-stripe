@@ -11,42 +11,15 @@ import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
 import { BiConversation } from "react-icons/bi";
-import { GrCart } from "react-icons/Gr";
-import { MdLogin } from "react-icons/Md";
+import { GrCart } from "react-icons/gr";
+import { MdLogin } from "react-icons/md";
 
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.black, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.black, 0.25),
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
-}));
-
-// const SearchIconWrapper = styled('div')(({ theme }) => ({
-//   padding: theme.spacing(0, 2),
-//   height: '100%',
-//   position: 'absolute',
-//   pointerEvents: 'none',
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-// }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
