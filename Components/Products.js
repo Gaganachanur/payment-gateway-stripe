@@ -23,7 +23,7 @@ import RedTop from "../assets/RedTop.jpg";
 import blackShirt from "../assets/blackShirt.jpg";
 import GaganBlueShirt from "../assets/GaganBlueShirt.jpg";
 import fasionquote from "../assets/fasionquote.jpg";
-import { checkout } from "../pages/checkout";
+import { checkout } from "./checkout";
 import { Fragment } from "react";
 
 const ExpandMore = styled((props) => {
