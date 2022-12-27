@@ -43,7 +43,12 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
+                <Typography
+                  className="font-Kalam text-2xl font-semibold flex justify-center"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   Mens Top
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -76,7 +81,12 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
+                <Typography
+                  className="font-Kalam text-2xl font-semibold flex justify-center"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   Women Pants
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -90,7 +100,7 @@ export default function DemoCards() {
         <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-            <Reveal animated="move down">
+              <Reveal animated="move down">
                 <Reveal.Content visible>
                   <Image
                     src={girlTop}
@@ -109,7 +119,12 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
+                <Typography
+                  className="font-Kalam text-2xl font-semibold flex justify-center"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   Women Tops
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
@@ -123,7 +138,7 @@ export default function DemoCards() {
         <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-            <Reveal animated="move right">
+              <Reveal animated="move right">
                 <Reveal.Content visible>
                   <Image
                     src={menPant2}
@@ -142,7 +157,12 @@ export default function DemoCards() {
                 </Reveal.Content>
               </Reveal>
               <CardContent>
-                <Typography  className="font-Kalam text-2xl font-semibold flex justify-center" gutterBottom variant="h5" component="div">
+                <Typography
+                  className="font-Kalam text-2xl font-semibold flex justify-center"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   Mens Pants
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary">
