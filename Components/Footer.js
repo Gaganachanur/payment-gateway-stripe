@@ -4,38 +4,31 @@ import { BsLinkedin, BsGithub, BsMedium } from "react-icons/bs";
 const Footer = () => {
   return (
     <Fragment>
-    <div className=" flex-wrap grid grid-cols-3 gap-4 bg-gray-500">
-      <div className="flex flex-wrap justify-center p-10">
-        <h1>About</h1>
-      </div>
+      <div className="flex flex-wrap justify-evenly bg-gray-500">
+        <div className=" p-10">
+          <h1>About</h1>
+          <p className="text-xl  text-red-50"> fashion .com</p>
+        </div>
 
-      <div className="flex-wrap justify-center p-10 " >
-        <h1>Developer contact</h1>
+        <div className="p-10 ">
+          <h1>Developer contact</h1>
+          <p className="text-xl  text-red-50">gaganachanur@gmail.com</p>
+          <p className="text-xl  text-red-50">9591557009</p>
+        </div>
+        <div className="p-10">
+          <h1>Profile Links</h1>
+          <div className=" flex flex-wrap justify-evenly ">
+          <BsLinkedin size="30px" />
+          <BsGithub size="30px" />
+          <BsMedium size="30px" />
+        </div>
+        </div>
       </div>
-      <div  className="flex-wrap justify-center p-10">
-      <h1>Profile Links</h1>
+      <div className=" text-red-50 text-xl bg-gray-500 p-10">
+      india © 2022  fashion.com . All rights reserved.
       </div>
-    </div>
-    <div className=" flex-wrap grid grid-cols-3 gap-4 bg-gray-500">
-    <div className="flex flex-wrap justify-center p-10">
-      <p className="text-2xl text-white ">
-         Fashion.com
-      </p>
-    </div>
-
-    <div className="flex-wrap justify-center p-10 " >
-      <p className="text-2xl text-white">gaganachanur@gmail.com</p>
-      <p className="text-2xl text-white">9591557009</p>
-    </div>
-    <div  className=" flex flex-wrap justify-evenly ">
-    <BsLinkedin size='30px'/>
-    <BsGithub size='30px'/>
-    <BsMedium size='30px'/>
-    </div>
-  </div>
-  <div className=" bg-gray-500 flex flex-wrap text-white p-9 ">
-  <h3>fashion.com © 2022 . All rights reserved.</h3>
-  </div>
- </Fragment> );
+     
+    </Fragment>
+  );
 };
 export default Footer;
