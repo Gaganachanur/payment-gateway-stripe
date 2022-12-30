@@ -20,7 +20,7 @@ import menPant5 from "../assets/menPant5.jpg";
 export default function DemoCards() {
   return (
     <Fragment>
-      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap px-20   ">
+      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap pl-20   ">
         <div class="row-span-3 col-span-4 ...">
         <div className="   flex flex-wrap justify-center">
           <p className="text-6xl px-20 text-white font-Kalam font-semibold"> Grab Your Fashion Now</p>
