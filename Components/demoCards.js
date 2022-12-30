@@ -20,15 +20,15 @@ import menPant5 from "../assets/menPant5.jpg";
 export default function DemoCards() {
   return (
     <Fragment>
-      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap   ">
-        <div class="row-span-3 ...">
-        <div className="  p-20  flex flex-wrap justify-center">
-          <p className="text-6xl p-20 text-white font-Kalam font-semibold"> Grab Your Fashion Now</p>
+      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap px-20   ">
+        <div class="row-span-3 col-span-4 ...">
+        <div className="   flex flex-wrap justify-center">
+          <p className="text-6xl px-20 text-white font-Kalam font-semibold"> Grab Your Fashion Now</p>
         </div>
           
         </div>
       
-        <div class="row-span-3 col-span-3 ... flex flex-wrap">
+        <div class="row-span-3 col-span-2 ... flex flex-wrap">
           
         <div className=" border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
           <Card sx={{ maxWidth: 345 }}>
