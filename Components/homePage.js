@@ -28,10 +28,10 @@ export default function HomePage(props) {
   return (
     <Fragment>
       <div className={darkMode ? "dark" : ""}>
-        <div className="bg-white dark:bg-black">
+        <div className="dark:bg-black bg-gradient-to-r from-indigo-500 lg:from-pink-500 ">
           <PrimarySearchAppBar />
         </div>
-        <SlideEffect/>
+        {/* <SlideEffect/> */}
         <DemoCards />
        
         <Products />

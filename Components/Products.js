@@ -64,15 +64,20 @@ export default function Products() {
   return (
     <Fragment>
       <div className="flex flex-wrap justify-around">
-        <div className="mt-20">
-          <Image
+        <div className=" mt-20 font-Kalam text-5xl">
+          {/* <Image
             src={fasionquote}
             alt="Picture of the author"
             width={330}
             height={200}
-          />
+          /> */}
+         <p>Dress</p> 
+         <p>like </p> 
+         <p>Your</p> 
+         <p>Already</p>
+         <p>Famous</p>  
         </div>
-        <div>
+        <div className="mt-20">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."

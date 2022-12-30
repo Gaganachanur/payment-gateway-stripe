@@ -2,7 +2,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, Button } from "@mui/material";
 import Image from "next/image";
 import { Fragment } from "react";
 import { Reveal } from "semantic-ui-react";
@@ -20,8 +20,17 @@ import menPant5 from "../assets/menPant5.jpg";
 export default function DemoCards() {
   return (
     <Fragment>
-      <div className="flex flex-wrap flex-row justify-center border-spacing-4 bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl p-2 m-5 rounded-xl border ...">
-        <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap   ">
+        <div class="row-span-3 ...">
+        <div className="  p-20  flex flex-wrap justify-center">
+          <p className="text-6xl p-20 text-white font-Kalam font-semibold"> Grab Your Fashion Now</p>
+        </div>
+          
+        </div>
+      
+        <div class="row-span-3 col-span-3 ... flex flex-wrap">
+          
+        <div className=" border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move">
@@ -44,22 +53,18 @@ export default function DemoCards() {
               </Reveal>
               <CardContent>
                 <Typography
-                  className="font-Kalam text-2xl font-semibold flex justify-center"
+                  className="font-Kalam  text-2xl font-semibold flex justify-center"
                   gutterBottom
                   variant="h5"
                   component="div"
                 >
                   Mens Top
                 </Typography>
-                {/* <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
-        <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+        <div className=" border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move up">
@@ -89,10 +94,6 @@ export default function DemoCards() {
                 >
                   Women Pants
                 </Typography>
-                {/* <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
               </CardContent>
             </CardActionArea>
           </Card>
@@ -127,10 +128,6 @@ export default function DemoCards() {
                 >
                   Women Tops
                 </Typography>
-                {/* <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
               </CardContent>
             </CardActionArea>
           </Card>
@@ -165,13 +162,10 @@ export default function DemoCards() {
                 >
                   Mens Pants
                 </Typography>
-                {/* <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
               </CardContent>
             </CardActionArea>
           </Card>
+        </div>
         </div>
       </div>
     </Fragment>
