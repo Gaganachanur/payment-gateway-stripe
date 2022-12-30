@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub, BsMedium } from "react-icons/bs";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="flex flex-wrap justify-evenly bg-gray-500">
+      <div className="flex flex-wrap justify-evenly bg-gradient-to-r from-pink-500">
         <div className=" p-10">
           <h1>About</h1>
           <p className="text-xl  text-red-50"> fashion .com</p>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <div className=" text-red-50 text-xl bg-gray-500 p-10">
+      <div className=" text-red-50 text-xl bg-gradient-to-r from-pink-500 p-10">
       india © 2022  fashion.com . All rights reserved.
       </div>
      
