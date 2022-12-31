@@ -19,7 +19,7 @@ import ShareIcon from "@mui/icons-material/Share";
 const actions = [
   { icon: <FileCopyIcon />, name: "Copy" },
   { icon: <SaveIcon />, name: "Save" },
-  { icon: <PrintIcon />, name: "Print" },
+  { icon: <PrintIcon onClick={()=>window.print()} />, name: "Print" },
   { icon: <ShareIcon />, name: "Share" },
 ];
 
