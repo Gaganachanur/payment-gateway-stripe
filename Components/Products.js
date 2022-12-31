@@ -77,7 +77,7 @@ export default function Products() {
          <p>Already</p>
          <p>Famous</p>  
         </div>
-        <div className="mt-20">
+        <div className="mt-20 transform transition-all animate-bounce  ">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
@@ -148,8 +148,8 @@ export default function Products() {
         {" "}
         Our Premium products
       </h1>
-      <div className="flex flex-wrap justify-evenly">
-        <div>
+      <div className="flex flex-wrap justify-center bg-gradient-to-r from-transparent to-pink-500 ">
+        <div className="transform transition-all ease-in-out  duration-500 hover:scale-110">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
@@ -201,7 +201,7 @@ export default function Products() {
               </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div  className=" px-2" onClick={() => setBlackCount(blackcount + 1)}>
+              <div  className="cursor-pointer px-2" onClick={() => setBlackCount(blackcount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
@@ -209,7 +209,7 @@ export default function Products() {
               </div>
 
              
-                <div  expand={expanded2}
+                <div className="cursor-pointer" expand={expanded2}
                 onClick={handleExpandClick2}
                 aria-expanded={expanded2}
                 aria-label="show more"> <FaRegComment size="20px" /></div>
@@ -235,7 +235,7 @@ export default function Products() {
             </Collapse>
           </Card>
         </div>
-        <div>
+        <div className="transform transition-all ease-in-out  duration-500 hover:scale-110">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
@@ -286,7 +286,7 @@ export default function Products() {
               </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div  className=" px-2" onClick={() => setBlueCount(bluecount + 1)}>
+              <div  className=" cursor-pointer px-2" onClick={() => setBlueCount(bluecount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
@@ -294,7 +294,7 @@ export default function Products() {
               </div>
 
             
-                <div  expand={expanded3}
+                <div className="cursor-pointer" expand={expanded3}
                 onClick={handleExpandClick3}
                 aria-expanded={expanded3}
                 aria-label="show more"
@@ -323,7 +323,7 @@ export default function Products() {
             </Collapse>
           </Card>
         </div>
-        <div>
+        <div className="transform transition-all ease-in-out duration-500 hover:scale-110">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
@@ -376,7 +376,7 @@ export default function Products() {
 
             <CardActions disableSpacing>
               <div
-                className=" px-2"
+                className="cursor-pointer px-2"
                 onClick={() => setWhiteCount(whitecount + 1)}
               >
                 <Popup
@@ -385,7 +385,7 @@ export default function Products() {
                 />
               </div>
 
-              <FaRegComment
+              <FaRegComment className="cursor-pointer"
                 expand={expanded}
                 onClick={handleExpandClick}
                 aria-expanded={expanded1}

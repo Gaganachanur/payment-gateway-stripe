@@ -31,7 +31,7 @@ export default function DemoCards() {
       
         <div class="row-span-3 col-span-2 ... flex flex-wrap">
           
-        <div className=" border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ... hover:shadow-2xl  ">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move">
@@ -65,7 +65,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className=" border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move up">
@@ -99,7 +99,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+        <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move down">
@@ -133,7 +133,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ...">
+        <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move right">
