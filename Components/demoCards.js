@@ -20,18 +20,18 @@ import menPant5 from "../assets/menPant5.jpg";
 export default function DemoCards() {
   return (
     <Fragment>
-      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center  bg-gradient-to-r from-indigo-500 lg:from-pink-500  sm:flex flex-wrap p-10   ">
+      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center justify-center  sm:flex flex-wrap p-10   ">
         <div class="row-span-3 col-span-4 ...">
-        <div className="   flex flex-wrap justify-center">
-          <p className="text-6xl p-10 text-white font-Kalam font-semibold"> Grab Your Fashion Now</p>
-          
+        <div className=" flex flex-wrap justify-center">
+          <p className="text-6xl  text-black font-Kalam font-semibold"> Grab Your Fashion Now</p>
         </div>
-          
+        <p className="text-3xl p-3 text-black font-Kalam font-semibold"> fashion for genZ..</p>
+        <button className="bg-black text-white text-xl px-9 py-5 rounded-lg ... transform transition-colors hover:scale-105 hover:shadow-2xl  "> Shop Now</button>
         </div>
       
-        <div class="row-span-3 col-span-2 ... flex flex-wrap">
+        <div class="row-span-3 col-span-2 ... flex flex-wrap animate-pulse ">
           
-        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ... hover:shadow-2xl  ">
+        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ... hover:shadow-2xl transform transition-all hover:translate-x-10  ">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move">
@@ -65,7 +65,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
+        <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl transform transition-all hover:translate-y-10 ">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move up">
@@ -99,7 +99,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
+        <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl transform transition-all hover:scale-110">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move down">
@@ -133,7 +133,7 @@ export default function DemoCards() {
             </CardActionArea>
           </Card>
         </div>
-        <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
+        {/* <div className="border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ...  hover:shadow-2xl">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <Reveal animated="move right">
@@ -166,7 +166,7 @@ export default function DemoCards() {
               </CardContent>
             </CardActionArea>
           </Card>
-        </div>
+        </div> */}
         </div>
       </div>
     </Fragment>

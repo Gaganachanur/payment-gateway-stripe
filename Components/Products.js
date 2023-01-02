@@ -22,7 +22,6 @@ import girlWhiteshirt from "../assets/girlWhiteshirt.jpg";
 import RedTop from "../assets/RedTop.jpg";
 import blackShirt from "../assets/blackShirt.jpg";
 import GaganBlueShirt from "../assets/GaganBlueShirt.jpg";
-import fasionquote from "../assets/fasionquote.jpg";
 import { checkout } from "./checkout";
 import { Fragment } from "react";
 
@@ -39,7 +38,7 @@ const ExpandMore = styled((props) => {
 
 export default function Products() {
   const [expanded, setExpanded] = React.useState(false);
-  const [expanded1, setExpanded1] = React.useState(true);
+  const [expanded1, setExpanded1] = React.useState(false);
   const [expanded2, setExpanded2] = React.useState(false);
   const [expanded3, setExpanded3] = React.useState(false);
 
@@ -144,12 +143,12 @@ export default function Products() {
         </div>
         {/* <div ><Steps/></div> */}
       </div>
-      <h1 className="text-3xl font-semibold ... p-5 font-Kalam">
+      <h1 className="text-3xl font-semibold ... px-20 py-10  font-Kalam">
         {" "}
         Our Premium products
       </h1>
-      <div className="flex flex-wrap justify-center bg-gradient-to-r from-transparent to-pink-500 ">
-        <div className="transform transition-all ease-in-out  duration-500 hover:scale-110">
+      <div className="flex flex-wrap justify-center ">
+        <div className="transform transition-all ease-in-out  duration-500 hover:scale-110 ">
           <Card
             sx={{ maxWidth: 345 }}
             className="border-spacing-4 shadow-2xl p-2 m-5 rounded-xl border ..."
