@@ -52,6 +52,8 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.layer{
   background-image: url(../assets/layered-waves.svg);
 }
 
