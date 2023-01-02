@@ -33,7 +33,7 @@ export default function HomePage(props) {
         </div>
         {/* <SlideEffect/> */}
         <DemoCards />
-       <div className="spacer"></div>
+       <div className="spacer layer"></div>
         <Products />
 
         <Box sx={{ height: 320, transform: "translateZ(0px)", flexGrow: 1 }}>
