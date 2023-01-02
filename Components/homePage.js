@@ -28,12 +28,12 @@ export default function HomePage(props) {
   return (
     <Fragment>
       <div className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-black bg-gradient-to-r from-indigo-500 lg:from-pink-500 ">
+        <div className="dark:bg-black">
           <PrimarySearchAppBar />
         </div>
         {/* <SlideEffect/> */}
         <DemoCards />
-       
+       <div className="spacer"></div>
         <Products />
 
         <Box sx={{ height: 320, transform: "translateZ(0px)", flexGrow: 1 }}>

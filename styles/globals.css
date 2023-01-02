@@ -46,4 +46,12 @@ a {
 button:hover {
   opacity: 0.8;
 }
+.spacer{
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/layered-waves.svg);
+}
 
