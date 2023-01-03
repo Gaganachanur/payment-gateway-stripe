@@ -43,9 +43,11 @@ a {
   transition: all 0.2s ease;
   box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
 }
+
 button:hover {
   opacity: 0.8;
 }
+
 .spacer{
   aspect-ratio: 960/200;
   width: 100%;
@@ -53,11 +55,13 @@ button:hover {
   background-position: center;
   background-size: cover;
 }
+
 .layer{
   background-image: url(../assets/layered-waves.svg);
 }
+
 .blob{
-  background-image: url('../assets/blob.png');
+  background-image: url('../public/blob.png');
   background-repeat: no-repeat;
 }
 
