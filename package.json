@@ -31,6 +31,7 @@
     "stripe": "^11.4.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
