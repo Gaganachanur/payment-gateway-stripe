@@ -57,16 +57,11 @@ button:hover {
 }
 
 .layer{
-  background-image: url(../assets/layered-waves.svg);
+  background-image: url('../public/layered-waves.svg');
 }
 
 .blob{
   background-image: url('../public/blob.png');
-  background-repeat: no-repeat;
-}
-
-.blob2{
-  background-image: url('../assets/blob-haikei.png');
   background-repeat: no-repeat;
 }
 

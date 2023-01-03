@@ -15,7 +15,6 @@ import FileCopyIcon from "@mui/icons-material/FileCopyOutlined";
 import SaveIcon from "@mui/icons-material/Save";
 import PrintIcon from "@mui/icons-material/Print";
 import ShareIcon from "@mui/icons-material/Share";
-import layersvg from '../assets/layered-waves.svg'
 
 const actions = [
   { icon: <FileCopyIcon />, name: "Copy" },
@@ -34,8 +33,9 @@ export default function HomePage(props) {
         </div>
         {/* <SlideEffect/> */}
         <DemoCards />
-       <div className="spacer layer"> </div>
+       <div className="  spacer layer"> </div>
         <Products />
+     
 
         <Box sx={{ height: 320, transform: "translateZ(0px)", flexGrow: 1 }}>
           <SpeedDial
