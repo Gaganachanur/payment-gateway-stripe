@@ -61,7 +61,7 @@ button:hover {
 }
 
 .blob{
-  background-image: url('../public/blob.png');
+  background-image: url('../public/vercel.svg');
   background-repeat: no-repeat;
 }
 
