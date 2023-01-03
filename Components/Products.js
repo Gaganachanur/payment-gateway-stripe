@@ -62,8 +62,8 @@ export default function Products() {
 
   return (
     <Fragment>
-      <div className="flex flex-wrap justify-around">
-        <div className=" mt-20 font-Kalam text-5xl">
+      <div className="flex flex-wrap justify-around blob">
+        <div className=" mt-20 font-Kalam text-5xl ">
           {/* <Image
             src={fasionquote}
             alt="Picture of the author"

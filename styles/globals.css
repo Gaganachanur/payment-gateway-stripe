@@ -56,4 +56,20 @@ button:hover {
 .layer{
   background-image: url(../assets/layered-waves.svg);
 }
+.blob{
+  background-image: url('../assets/blob.png');
+  background-repeat: no-repeat;
+}
+
+.blob2{
+  background-image: url('../assets/blob-haikei.png');
+  background-repeat: no-repeat;
+}
+
+.loginn{
+  background-image: url('../assets/backgroundLogin.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 

@@ -20,7 +20,7 @@ export default function LoginnPage() {
   }
   return (
     <Fragment>
-     <div className="h-screen bg-gradient-to-r from-purple-500 to-pink-500">
+     <div className="h-screen loginn">
       <div className="flex h-screen justify-center items-center"> 
         <div className="box-border bg-gray-300  p-4 shadow-2xl ...  rounded-xl">
         <Form/>   
