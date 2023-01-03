@@ -20,7 +20,7 @@ import menPant5 from "../assets/menPant5.jpg";
 export default function DemoCards() {
   return (
     <Fragment>
-      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center justify-center  sm:flex flex-wrap p-10   ">
+      <div class="lg:grid grid-rows-3 grid-flow-col gap-4 flex items-center justify-center blob  sm:flex flex-wrap p-10 bg-gray-50 ">
         <div class="row-span-3 col-span-4 ...">
         <div className=" flex flex-wrap justify-center">
           <p className="text-6xl  text-black font-Kalam font-semibold"> Grab Your Fashion Now</p>
@@ -29,7 +29,7 @@ export default function DemoCards() {
         <button className="bg-black text-white text-xl px-9 py-5 rounded-lg ... transform transition-colors hover:scale-105 hover:shadow-2xl  "> Shop Now</button>
         </div>
       
-        <div class="row-span-3 col-span-2 ... flex flex-wrap animate-pulse ">
+        <div class="row-span-3 col-span-2 ... flex flex-wrap ">
           
         <div className=" border-spacing-4 shadow-xl p-2 m-5 rounded-xl border ... hover:shadow-2xl transform transition-all hover:translate-x-10  ">
           <Card sx={{ maxWidth: 345 }}>
