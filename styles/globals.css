@@ -57,11 +57,11 @@ button:hover {
 }
 
 .layer{
-  background-image: url('../public/layered-waves.svg');
+  background-image: url('/layered-waves.svg');
 }
 
 .blob{
-  background-image: url('../public/vercel.svg');
+  background-image: url('/blob.png');
   background-repeat: no-repeat;
 }
 
