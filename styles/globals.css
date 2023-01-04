@@ -66,9 +66,11 @@ button:hover {
 }
 
 .loginn{
-  background-image: url('/backgroundLogin.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.logbg{
+  background-image: url('/backgroundLogin.png');
 }
 

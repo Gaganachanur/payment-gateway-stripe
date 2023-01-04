@@ -7,7 +7,7 @@ const Footer = () => {
   const mediumUrl = `https://medium.com/@gaganachanur`
   return (
     <Fragment>
-      <div className="flex flex-wrap justify-evenly bg-gradient-to-r from-indigo-500 lg:from-pink-500 ">
+      <div className="flex flex-wrap justify-evenly bg-gradient-to-r from-indigo-500 lg:from-purple-600">
         <div className=" p-10">
           <h1 >About</h1>
           <p className="text-xl  text-red-50"> fashion .com</p>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <div className=" text-red-50 text-xl pl-10 pb-10 bg-gradient-to-r from-indigo-500 lg:from-pink-500 ">
+      <div className=" text-red-50 text-xl pl-10 pb-10 bg-gradient-to-r from-indigo-500 lg:from-purple-600 ">
       india © 2022  fashion.com . All rights reserved.
       </div>
      
