@@ -24,6 +24,8 @@ import blackShirt from "../assets/blackShirt.jpg";
 import GaganBlueShirt from "../assets/GaganBlueShirt.jpg";
 import { checkout } from "./checkout";
 import { Fragment } from "react";
+import {useSession, signIn, signOut} from "next-auth/react";
+import { useRouter } from "next/router";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -47,6 +49,8 @@ export default function Products() {
   const [blackcount, setBlackCount] = React.useState(998);
   const [bluecount, setBlueCount] = React.useState(998);
 
+  const router = useRouter();
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -59,7 +63,44 @@ export default function Products() {
   const handleExpandClick3 = () => {
     setExpanded3(!expanded3);
   };
+  const {data: session, status} = useSession();
 
+  function handelCheckout(tshirt) {
+    if(['authenticated'].includes(status)){
+
+      if (tshirt === 'black'){
+    checkout({
+      lineItems: [
+        {
+          price: "price_1MJH66SIUtlkQfBLFfr3c6dN",
+          quantity: 1,
+        },
+      ],
+    });
+  }else if (tshirt === 'blue'){
+    checkout({
+      lineItems: [
+        {
+          price: "price_1MJH1XSIUtlkQfBLB1qf0xrD",
+          quantity: 1,
+        },
+      ],
+    });
+  }else{
+        checkout({
+          lineItems: [
+            {
+              price: "price_1MJH7YSIUtlkQfBLFF7qEscE",
+              quantity: 1,
+            },
+          ],
+        });
+  }
+  }else{
+    router.push('/LogInn')
+  }
+  }
+  
   return (
     <Fragment>
       <div className="flex flex-wrap justify-around">
@@ -184,16 +225,7 @@ export default function Products() {
 
               <button
                 className="button w-full"
-                onClick={() => {
-                  checkout({
-                    lineItems: [
-                      {
-                        price: "price_1MJH66SIUtlkQfBLFfr3c6dN",
-                        quantity: 1,
-                      },
-                    ],
-                  });
-                }}
+                onClick={()=>{handelCheckout('black')}}
               >
                 {" "}
                 buy now
@@ -269,16 +301,7 @@ export default function Products() {
               </div>
               <button
                 className="button w-full"
-                onClick={() => {
-                  checkout({
-                    lineItems: [
-                      {
-                        price: "price_1MJH1XSIUtlkQfBLB1qf0xrD",
-                        quantity: 1,
-                      },
-                    ],
-                  });
-                }}
+                onClick={()=>{handelCheckout('blue')}}
               >
                 {" "}
                 buy now
@@ -357,16 +380,7 @@ export default function Products() {
               </div>
               <button
                 className="button w-full "
-                onClick={() => {
-                  checkout({
-                    lineItems: [
-                      {
-                        price: "price_1MJH7YSIUtlkQfBLFF7qEscE",
-                        quantity: 1,
-                      },
-                    ],
-                  });
-                }}
+                onClick={()=>{handelCheckout('white')}}
               >
                 {" "}
                 buy now
