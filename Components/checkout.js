@@ -16,7 +16,7 @@ const stripe = await getStripe()
 await stripe.redirectToCheckout({
   mode: 'payment',
   lineItems,
-  successUrl: `${window.location.origin}/?success=true`,
+  successUrl: `${window.location.origin}/PaymentSucess/?success=true`,
   cancelUrl: `${window.location.origin}`,
 })
 }
