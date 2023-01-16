@@ -22,10 +22,10 @@ import girlWhiteshirt from "../assets/girlWhiteshirt.jpg";
 import RedTop from "../assets/RedTop.jpg";
 import blackShirt from "../assets/blackShirt.jpg";
 import GaganBlueShirt from "../assets/GaganBlueShirt.jpg";
-import { checkout } from "./checkout";
 import { Fragment } from "react";
-import {useSession, signIn, signOut} from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
+import { productsIds } from "./productIDS.js";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -63,44 +63,16 @@ export default function Products() {
   const handleExpandClick3 = () => {
     setExpanded3(!expanded3);
   };
-  const {data: session, status} = useSession();
+  const { data: session, status } = useSession();
 
   function handelCheckout(tshirt) {
-    if(['authenticated'].includes(status)){
+    if (["authenticated"].includes(status)) {
+      productsIds(tshirt);
+    } else {
+      router.push("/LogInn");
+    }
+  }
 
-      if (tshirt === 'black'){
-    checkout({
-      lineItems: [
-        {
-          price: "price_1MJH66SIUtlkQfBLFfr3c6dN",
-          quantity: 1,
-        },
-      ],
-    });
-  }else if (tshirt === 'blue'){
-    checkout({
-      lineItems: [
-        {
-          price: "price_1MJH1XSIUtlkQfBLB1qf0xrD",
-          quantity: 1,
-        },
-      ],
-    });
-  }else{
-        checkout({
-          lineItems: [
-            {
-              price: "price_1MJH7YSIUtlkQfBLFF7qEscE",
-              quantity: 1,
-            },
-          ],
-        });
-  }
-  }else{
-    router.push('/LogInn')
-  }
-  }
-  
   return (
     <Fragment>
       <div className="flex flex-wrap justify-around">
@@ -111,11 +83,11 @@ export default function Products() {
             width={330}
             height={200}
           /> */}
-         <p>Dress</p> 
-         <p>like </p> 
-         <p>Your</p> 
-         <p>Already</p>
-         <p>Famous</p>  
+          <p>Dress</p>
+          <p>like </p>
+          <p>Your</p>
+          <p>Already</p>
+          <p>Famous</p>
         </div>
         <div className="mt-20 transform transition-all animate-bounce  ">
           <Card
@@ -151,18 +123,21 @@ export default function Products() {
             </CardContent>
 
             <CardActions disableSpacing>
-              <div  className=" px-2" onClick={() => setRedCount(redcount + 1)}>
+              <div className=" px-2" onClick={() => setRedCount(redcount + 1)}>
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
-                <div
-                 expand={expanded1}
-                 onClick={handleExpandClick1}
-                 aria-expanded={expanded1}
-                 aria-label="show more"
-                >  <FaRegComment size="20px" /></div>
+              <div
+                expand={expanded1}
+                onClick={handleExpandClick1}
+                aria-expanded={expanded1}
+                aria-label="show more"
+              >
+                {" "}
+                <FaRegComment size="20px" />
+              </div>
               <div className="px-2">
                 {" "}
                 <FiSend size="25px" />
@@ -225,26 +200,36 @@ export default function Products() {
 
               <button
                 className="button w-full"
-                onClick={()=>{handelCheckout('black')}}
+                onClick={() => {
+                  handelCheckout("black");
+                }}
               >
                 {" "}
                 buy now
               </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div  className="cursor-pointer px-2" onClick={() => setBlackCount(blackcount + 1)}>
+              <div
+                className="cursor-pointer px-2"
+                onClick={() => setBlackCount(blackcount + 1)}
+              >
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
 
-             
-                <div className="cursor-pointer" expand={expanded2}
+              <div
+                className="cursor-pointer"
+                expand={expanded2}
                 onClick={handleExpandClick2}
                 aria-expanded={expanded2}
-                aria-label="show more"> <FaRegComment size="20px" /></div>
-             
+                aria-label="show more"
+              >
+                {" "}
+                <FaRegComment size="20px" />
+              </div>
+
               <div className="px-2">
                 {" "}
                 <FiSend size="25px" />
@@ -301,28 +286,35 @@ export default function Products() {
               </div>
               <button
                 className="button w-full"
-                onClick={()=>{handelCheckout('blue')}}
+                onClick={() => {
+                  handelCheckout("blue");
+                }}
               >
                 {" "}
                 buy now
               </button>
             </CardContent>
             <CardActions disableSpacing>
-              <div  className=" cursor-pointer px-2" onClick={() => setBlueCount(bluecount + 1)}>
+              <div
+                className=" cursor-pointer px-2"
+                onClick={() => setBlueCount(bluecount + 1)}
+              >
                 <Popup
                   trigger={<Icon name="heart" color="red" size="large" />}
                   content="Add to wish list"
                 />
               </div>
 
-            
-                <div className="cursor-pointer" expand={expanded3}
+              <div
+                className="cursor-pointer"
+                expand={expanded3}
                 onClick={handleExpandClick3}
                 aria-expanded={expanded3}
                 aria-label="show more"
-                >  <FaRegComment size="20px" /></div>
-              
-              
+              >
+                {" "}
+                <FaRegComment size="20px" />
+              </div>
 
               <div className="px-2">
                 {" "}
@@ -380,7 +372,9 @@ export default function Products() {
               </div>
               <button
                 className="button w-full "
-                onClick={()=>{handelCheckout('white')}}
+                onClick={() => {
+                  handelCheckout("white");
+                }}
               >
                 {" "}
                 buy now
@@ -398,7 +392,8 @@ export default function Products() {
                 />
               </div>
 
-              <FaRegComment className="cursor-pointer"
+              <FaRegComment
+                className="cursor-pointer"
                 expand={expanded}
                 onClick={handleExpandClick}
                 aria-expanded={expanded1}
